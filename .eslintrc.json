@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "extends": "next/core-web-vitals",
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "parser": "@typescript-eslint/parser"
+  },
+  "plugins": ["prettier", "react-hooks", "@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "globals": {
+    "chrome": true,
+    "React": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
